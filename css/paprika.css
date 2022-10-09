@@ -1,0 +1,217 @@
+body 
+{
+    background-color: papayawhip;
+    color:saddlebrown;
+    max-width: 1000px;
+    margin:auto
+}
+
+#fejlec {
+    background-image: url("fejlec.png");
+    background-size: cover;
+    padding: 1rem;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#fokeret {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 10px;
+}
+#tartalom{
+    margin-left: 3%;
+}
+
+@media screen and (max-width: 1000px) {
+    #fokeret {
+        flex-wrap: wrap;
+    }
+    
+    #menu {
+        margin: auto;
+        width: 100%;
+    }
+
+    #menu ul {
+        text-align: center;
+    }
+
+    #menu ul li {
+        display: inline-block;
+    }
+} 
+#menu ul li {
+    list-style-image: url("paprikaikon.jpg");
+    background-color: white;
+    border: 1px solid cadetblue;
+    padding: 10px;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+table {
+    width: 300px;
+    margin: 20px auto auto auto;
+    border-collapse: collapse;
+}
+
+table, th, tr, td {
+    border: 1px solid black;    
+    font-weight: bold;
+    padding: 5px;
+}
+
+table td:nth-child(2) {
+    width: 120px;
+    text-align: center;
+}
+
+#szin1{
+    background-color: lightgreen;
+    text-align: center;
+}
+#szin2{
+    background-color: whitesmoke;
+    text-align: center;
+}
+#szin3{
+    background-color: salmon;
+    text-align: center;
+}
+#szin4{
+    background-color: violet;
+    text-align: center;
+}
+a {
+    color: #000;
+  }
+  
+  
+  .header {
+    width: 100%;
+    z-index: 3;
+    background-color: wheat;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: wheat;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+@media (min-width: 769px) {
+  #nagykepernyo{
+    display: block;
+  }
+  #kiskepernyo{
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #nagykepernyo{
+    display: none;
+  }
+  #kiskepernyo{
+    display: block;
+  }
+}
